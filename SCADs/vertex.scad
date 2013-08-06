@@ -146,14 +146,14 @@ module vertex( with_foot = true )
 		for ( hole = [0 : 1] )
 		rotate( hole * 60 )
 		translate( [hole_separation, 0, -1] )
-		cylinder( h = vfvertex_height + 2, r = ( m8_diameter / 2 ) ); 
+		cylinder( h = vfvertex_height + 2, r = ( threaded_rod_diameter / 2 ) ); 
 
 		for ( block = [0 : 1] )
 		rotate( block * 60 )
 		translate( [hole_separation - vertex_end_major_d / 2 - 1,
 			vertex_horizontal_hole_offset - 2 * block * vertex_horizontal_hole_offset,
 			vfvertex_height / 2] )
-		rotate ([0,90,0]) cylinder ( r = (m8_diameter - 0.1) / 2, h = vertex_end_major_d + 2 );
+		rotate ([0,90,0]) cylinder ( r = (threaded_rod_diameter - 0.1) / 2, h = vertex_end_major_d + 2 );
 
 //	commented out teardrop
 
